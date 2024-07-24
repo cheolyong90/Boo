@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Cyborg - Awesome HTML5 Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  <style type="text/css">
+     .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 60%;
+      height: 60%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .thumb span {
+      display: none;
+      /* Initially hide the span content */
+    }
+
+    .modalBtn {
+      cursor: pointer;
+    }
+
+    @keyframes modalopen {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .close {
+      color: darkgray;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      cursor: pointer;
+    }
+
+    #main-button11 {
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+      padding: 5px;
+    }
+
+    #main-button12 {
+      width: 98px;
+      height: 32.5px;
+      margin-right: 15px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+  
+    .main-button {
+      margin-top: 10px;
+    }
+    .main-button span {
+      display: none;
+    }
+    .additional-buttons {
+      display: none;
+      margin-top: 10px;
+    }
+    .additional-buttons button {
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h2 style="width: 180; height: 64; color: #ec6090; font: 45px Poppins, sans-serif;"><b>프리랜선</b></h2>
+              <!-- <img src="assets/images/프리랜선.png" alt=""> -->
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Search End ***** -->
+            <!-- <div class="search-input">
+            <form id="search" action="#">
+              <input type="text" placeholder="검색하기" id='searchText' name="searchKeyword" onkeypress="handle" />
+              <i class="fa fa-search"></i>
+            </form>
+          </div> -->
+            <!-- ***** Search End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="browse.html">소통하고 협업하기</a></li>
+              <li><a href="streams.html">일자리 구하기</a></li>
+              <li><a href="details.html">정보 얻어가기</a></li>
+              <li><a href="profile.html"><span id="subscriberBtn" style="color: white"><i
+                      class="fa-regular fa-user"></i>&nbsp;<b>프로필 등록</b> &nbsp;</span></a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Featured Games Start ***** -->
+          <div class="row">
+            <div class="col-lg-8">
+            <div class="featured-games header-text">
+              <div class="heading-section">
+                <h4><em>구해줘</em> 프리</h4>
+              </div>
+              <div class="owl-features owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인6.jpg" alt="">
+                    <button id="sendMessageBtn1" onclick="showMessageForm(1)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails1" style="display: none;">
+                      영상제작, 기획 프리랜서
+                      연령제한: 없음
+                      급여 : 350만
+                      위치 : 강남
+                      시간 : 9~6시 주 5일
+                      경력 : 1년이상
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인1.jpg" alt="">
+                    <button id="sendMessageBtn2" onclick="showMessageForm(2)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails2" style="display: none;">
+                      가이드보컬
+                      연령제한: 없음
+                      급여 : 200
+                      위치 : 광주
+                      시간 : 협의
+                      경력 : 3년이상
+                    </span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인2.jpg" alt="">
+                    <button id="sendMessageBtn3" onclick="showMessageForm(3)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails3" style="display: none;">
+                      네일아트
+                      연령제한: 없음
+                      급여 : 300
+                      위치 : 강원도 원주
+                      시간 : 12~10시 주 6일
+                      경력 : 무관
+                    </span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인4.jpg" alt="">
+                    <button id="sendMessageBtn4" onclick="showMessageForm(4)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails4" style="display: none;">
+                      식당
+                      연령제한: 없음
+                      급여 : 300만
+                      위치 : 수원
+                      시간 : 9~6시 주 6일
+                      경력 : 무관
+                    </span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인3.jpg" alt="">
+                    <button id="sendMessageBtn5" onclick="showMessageForm(5)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails5" style="display: none;">
+                      헬스 트레이너
+                      연령제한: 35세
+                      급여 : 350만
+                      위치 : 서초
+                      시간 : 10~10시 주 6일
+                      경력 : 무관
+                    </span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/구인5.jpg" alt="">
+                    <button id="sendMessageBtn6" onclick="showMessageForm(6)"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의하기</button>
+                    <span id="jobDetails6" style="display: none;">
+                      중국무역관련
+                      연령제한: 없음
+                      급여 : 400만
+                      위치 : 인천
+                      시간 : 9~6시 주 5일
+                      경력 : 2년이상
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span><a href="https://www.kinfa.or.kr/main.do"><img src="assets/images/광고.png"></a></span>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <!-- <p id="modalText"></p>
+                <textarea id="userMessage" placeholder="여기에 메시지를 입력하세요"></textarea> -->
+                <dvi style="text-align: right;">
+                  <div class="modal-buttons">
+                   <!-- <button id="sendButton" onclick="sendInquiry()"
+                       style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">문의발송</button> -->
+                    <button id="cancelButton" onclick="closeModalWithMessage()"
+                      style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);">등록 후 이용가능/닫기</button>
+                  </div>
+                </dvi>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4">
+              <div class="top-streamers">
+                <div class="heading-section">
+                  <h4><em>지식</em> 나눔 <i class="fa-solid fa-icons"><a href="profile.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                          class="fa-solid fa-right-to-bracket"></i></a></i></h4>
+                </div>
+                <ul>
+                  <li>
+                    <span>모델</span>
+                    <img src="assets/images/person_1.jpg" alt=""
+                      style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
+                    <h6>무료강의 배움요청하기 </h6>
+                    <div class="main-button">
+                      <button id="btn3" class="toggle-btn"
+                        style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);;"><i
+                          class="fa-solid fa-address-card"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <span>개발</span>
+                    <img src="assets/images/sq_img_10.jpg" alt=""
+                      style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
+                    <h6>무료강의 배움요청하기 </h6>
+                    <div class="main-button">
+                      <button id="btn3" class="toggle-btn"
+                        style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);;"><i
+                          class="fa-solid fa-address-card"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <span>영업</span>
+                    <img src="assets/images/person_4.jpg" alt=""
+                      style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
+                    <h6>무료강의 배움요청하기 </h6>
+                    <div class="main-button">
+                      <button id="btn3" class="toggle-btn"
+                        style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);;"><i
+                          class="fa-solid fa-address-card"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <span>음악</span>
+                    <img src="assets/images/avatar-04.jpg" alt=""
+                      style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
+                    <h6>무료강의 배움요청하기 </h6>
+                    <div class="main-button">
+                      <button id="btn3" class="toggle-btn"
+                        style="color: white; background-color: rgb(255, 147, 201); border-radius: 10px; border: rgb(255, 147, 201);;"><i
+                          class="fa-solid fa-address-card"></i></button>
+                    </div>
+                  </li>
+                  <!-- <li>
+                    <span>05</span>
+                    <img src="assets/images/avatar-01.jpg" alt=""
+                      style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
+                    <h6><i class="fa fa-check"></i> GangTeam</h6>
+                    <div class="main-button">
+                      <a href="#">Follow</a>
+                    </div>
+                  </li> -->
+                  <span style="color: #ec6090;">전문가에게 노하우를 전수 받으세요!</span>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Featured Games End ***** -->
+
+
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>프리하게</em> 일하자</h4>
+                <!-- ***** Search End ***** -->
+                <div class="input1">
+                  <form id="search" action="#">
+                    <input type="text" placeholder="검색하기" id='searchText1' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                <!-- ***** Search End ***** -->
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/sq_img_5.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>Dota</h4><span>인테리어</span>
+                  </li>
+                  <li>
+                    <h4>인테리어 능력자 구합니다</h4><span>2024/06/08</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 서울(노원)</h4><span>(일) 12만</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 3명</h4><span>010-****-1597</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/sq_img_1.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>PicE</h4><span>사진작가</span>
+                  </li>
+                  <li>
+                    <h4>사진찍으러 가실분~</h4><span>2024/06/10</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 제주(제주시)</h4><span>페이 협의</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 2명</h4><span>010-****-5677</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/sq_img_2.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>모델모여라</h4><span>모델</span>
+                  </li>
+                  <li>
+                    <h4>쇼핑몰 의류모델 같이하실분??</h4><span>2024/06/18</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 서울(강남)</h4><span>페이 협의</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 1명</h4><span>010-****-4514</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/속기사1.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>누구보다 빠르게</h4><span>속기사</span>
+                  </li>
+                  <li>
+                    <h4>속기사 하루 일하시분?</h4><span>2024/06/15</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 인천</h4><span>일당 20만</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 3명</h4><span>010-****-1597</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/웹개발.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>JBsch</h4><span>웹 개발</span>
+                  </li>
+                  <li>
+                    <h4>함께하시분 구합니다</h4><span>2024/06/10~</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 서울전체</h4><span>페이 협의</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 4명</h4><span>010-****-4484</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/게임개발.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>Game</h4><span>게임 개발</span>
+                  </li>
+                  <li>
+                    <h4>게임개발 해보실분?</h4><span>2024/06/09~</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 경기전체</h4><span>페의 협의</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 7명</h4><span>010-****-7845</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/앱등이.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>앱등이</h4><span>앱 개발</span>
+                  </li>
+                  <li>
+                    <h4>앱개발 짧게 진행해보실분?</h4><span>2024/06/20</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 서울(강남)</h4><span>(일) 15만</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 2명</h4><span>010-****-9514</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/헤어.jpg" alt="" class="templatemo-item"></li>
+                  <li>
+                    <h4>머리잘헤어</h4><span>헤어디자이너</span>
+                  </li>
+                  <li>
+                    <h4>단기근무 헤어디자이너 구합니다</h4><span>2024/06/13~2024/06/20</span>
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+                    <h4>지역 : 강원전체</h4><span>페의 협의</span>
+                  </li>
+                  <li>
+                    <h4>구하는 인원 : 4명</h4><span>010-****-7555</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="profile.html">지원할래요!</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p>Make © 2024 <a href="#">Free Lancer</a> Company. Free Lancer.
+
+                <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">2024/06/06</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/tabs.js"></script>
+      <script src="assets/js/popup.js"></script>
+      <script src="assets/js/custom.js"></script>
+
+      <!--게시판-->
+      <script>
+        function addPost() {
+          const job = document.getElementById('job').value;
+          const content = document.getElementById('content').value;
+          if (job && content) {
+            const postList = document.getElementById('post-list');
+            const newPost = document.createElement('div');
+            newPost.classList.add('post');
+
+            const jobElement = document.createElement('h3');
+            jobElement.textContent = job;
+
+            const contentElement = document.createElement('p');
+            contentElement.textContent = content;
+
+            newPost.appendChild(jobElement);
+            newPost.appendChild(contentElement);
+
+            postList.appendChild(newPost);
+
+            document.getElementById('job').value = '';
+            document.getElementById('content').value = '';
+          } else {
+            alert('직업과 내용을 입력해주세요.');
+          }
+        }
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var buttons = document.querySelectorAll('.toggle-btn');
+          buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+              if (button.innerHTML === '예약요청') {
+                button.innerHTML = '프로필 등록 후 이용가능';
+              } else {
+                button.innerHTML = '프로필 등록 후 이용가능';
+              }
+            });
+          });
+        });
+      </script>
+      <script>
+        function showMessageForm(buttonId) {
+          document.querySelectorAll('.message-form').forEach(form => {
+            form.style.display = 'none'; // 모든 메시지 폼 숨기기
+          });
+          document.getElementById('messageForm' + buttonId).style.display = 'block'; // 해당 메시지 폼 보이기
+        }
+
+        function sendMessage(buttonId) {
+          var message = document.getElementById('message' + buttonId).value;
+          if (message) {
+            document.getElementById('messageForm' + buttonId).style.display = 'none';
+            alert('프로필 등록 후 이용가능한 기능입니다.');
+            document.getElementById('message' + buttonId).value = ''; // Reset the message input
+          } else {
+            alert('메시지를 입력해주세요.');
+          }
+        }
+
+      </script>
+
+      <script>
+        $("#searchText1").keyup(function () {
+          var filter = $(this).val().toLowerCase(); // 사용자가 입력한 검색어를 모두 소문자로 바꿈
+          $(".item ul").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(filter) > -1);
+          });
+        });
+      </script>
+        <script>
+          function showMessageForm(jobId) {
+            const modal = document.getElementById('myModal');
+            const modalText = document.getElementById('modalText');
+            const jobDetails = document.getElementById('jobDetails' + jobId).innerText;
+
+            modal.style.display = 'block';
+            modalText.innerText = jobDetails;
+          }
+
+          function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+          }
+
+          function closeModalWithMessage() {
+            alert('취소되었습니다.');
+            closeModal();
+          }
+
+          function sendInquiry() {
+            const userMessage = document.getElementById('userMessage').value.trim();
+
+            if (userMessage === '') {
+              alert('내용을 입력하세요.');
+            } else {
+              alert('발송이 완료되었습니다. 곧 연락드리겠습니다.');
+              closeModal();
+            }
+          }
+
+          window.onclick = function (event) {
+            const modal = document.getElementById('myModal');
+            if (event.target == modal) {
+              closeModal();
+            }
+          }
+        </script>
+      <script>
+        function toggleDetails(id) {
+          const details = document.getElementById('details' + id);
+          const buttons = document.getElementById('buttons' + id);
+
+          if (details.style.display === 'none' || details.style.display === '') {
+            details.style.display = 'block';
+            buttons.style.display = 'block';
+          } else {
+            details.style.display = 'none';
+            buttons.style.display = 'none';
+          }
+        }
+
+        function apply(id) {
+          alert('신청이 완료되었습니다. 3일 이내로 연락드리겠습니다.');
+          closeDetails(id);
+        }
+
+        function cancel() {
+          alert('취소되었습니다.');
+          closeAllDetails();
+        }
+
+        function closeDetails(id) {
+          const details = document.getElementById('details' + id);
+          const buttons = document.getElementById('buttons' + id);
+          details.style.display = 'none';
+          buttons.style.display = 'none';
+        }
+
+        function closeAllDetails() {
+          const spans = document.querySelectorAll('.main-button span');
+          const buttons = document.querySelectorAll('.additional-buttons');
+          spans.forEach(span => span.style.display = 'none');
+          buttons.forEach(button => button.style.display = 'none');
+        }
+
+
+        //로그인 전
+      </script>
+</body>
+
+</html>

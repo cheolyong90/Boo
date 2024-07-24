@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Cyborg - Awesome HTML5 Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  <style>
+    .modal {
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.520);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid darkgray;
+      width: 750px;
+      height: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      animation-name: modalopen;
+      animation-duration: 1s;
+    }
+
+    .modalBtn {
+      cursor: pointer;
+    }
+
+    @keyframes modalopen {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .close {
+      color: darkgray;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      cursor: pointer;
+    }
+
+    #main-button11 {
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+      padding: 5px;
+    }
+
+    #main-button12 {
+      width: 98px;
+      height: 32.5px;
+      margin-right: 15px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .yellow {
+      color: yellow;
+    }
+
+    .modal-buttons {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .modal-buttons button {
+      padding: 5px 15px;
+      margin-left: 10px;
+    }
+
+    .modal-buttons button:disabled {
+      background-color: lightgray;
+      cursor: not-allowed;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+
+    .message-box {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .message-box textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+    }
+
+    .message-box .buttons {
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .message-box .buttons button {
+      padding: 5px 15px;
+      margin-left: 10px;
+    }
+
+    .message-box .buttons button:disabled {
+      background-color: lightgray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h2 style="width: 180; height: 64; color: #ec6090; font: 45px Poppins, sans-serif;"><b>프리랜선</b></h2>
+              <!-- <img src="assets/images/프리랜선.png" alt=""> -->
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Search End ***** -->
+            <!-- <div class="search-input">
+            <form id="search" action="#">
+              <input type="text" placeholder="검색하기" id='searchText' name="searchKeyword" onkeypress="handle" />
+              <i class="fa fa-search"></i>
+            </form>
+          </div> -->
+            <!-- ***** Search End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="browse.html">소통하고 협업하기</a></li>
+              <li><a href="streams.html">일자리 구하기</a></li>
+              <li><a href="details.html">정보 얻어가기</a></li>
+              <li><a href="profile.html"><span id="subscriberBtn" style="color: white"><i
+                      class="fa-regular fa-user"></i>&nbsp;<b>프로필 등록</b> &nbsp;</span></a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Featured Games Start ***** -->
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="featured-games header-text">
+                <div class="heading-section">
+                  <h4><em>협업</em> 제안하기</h4>
+                </div>
+                <div class="owl-features owl-carousel">
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/images3.jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 서울전체</h6>
+                      </div>
+                    </div>
+                    <h4>기타리스트<br><span>거리공연 함께하실분 계실까요?</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="안녕하세요!
+                          25살 기타리스트에요~ 10일부터 13일 까지 거리공연을 홍대에서 하려고하는데 혹시 같이 진행해 보실분 계시면 메시지주세요!<br>
+                                    "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/새벽이(1).jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 강원도원주</h6>
+                      </div>
+                    </div>
+                    <h4>고양이 미용사<br><span>냥냥이 미용행사 참여하실분?</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="15일에 원주에서 고양이미용도 알리고 매장 홍보도 할겸해서 
+                          행사를 진행하는데 혹시 미용능력자 분들 같이 협업해주시면 좋겠어요 ^^ 메시지 주세요~<br>
+                                    "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/images1.jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 부산전체</h6>
+                      </div>
+                    </div>
+                    <h4>프론트엔드 개발자<br><span>같이 공부하면서 작업하실분?~</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="작게나마 웹페이지 제작을 해보려하는데 
+                          서로 공부하면서 같이하실분 있을까요? 초보자분들도 괜찮으니 메시지 주세요!<br>
+                                    "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/후추.jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 서울구로구</h6>
+                      </div>
+                    </div>
+                    <h4>강아지 미용사<br><span>강아지미용 배워보실분 있나요?</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="22일에 무료 레슨 행사있는데 배워보실분 메시지주세요! <br>
+                                    "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/가이드.jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 제주전체</h6>
+                      </div>
+                    </div>
+                    <h4>여행가이드<br><span>단체관광손님 사진찍으러 가실분?</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="중국 단체손님 오신대서 사진찍을 작가님들 모셔봐요~
+                          재밌게 일하지구요! <br>
+                                    "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="assets/images/images4.jpg" alt="">
+                      <div class="hover-effect">
+                        <h6>협업지역 : 울산전체</h6>
+                      </div>
+                    </div>
+                    <h4>의료기기영업사원<br><span>영업 많이 어렵네요... 노하우좀 ㅠ.ㅠ</span></h4>
+                    <ul>
+                      <div class="col-lg-12">
+                        <div class="main-button">
+                          <a id="main-button12" class="modalBtn" onclick="clickk()" data-content="이제 시작한 초보입니다. 선배님들 따라다니면서 노하우좀 배워보고 싶어요
+                          부탁드립니다! ㅠ <br>
+                                      "><b>메시지보내기</b></a>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalContent"></p>
+                <textarea id="modalInput" placeholder="메시지를 입력하세요"></textarea>
+                <div class="modal-buttons">
+                  <button id="sendBtn" disabled
+                    style="border-radius: 10px; background-color: #ec6090; color: white;">발송하기</button>
+                  <button id="cancelBtn"
+                    style="border-radius: 10px; background-color: #ec6090; color: white;">취소하기</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="top-downloaded">
+                <div class="heading-section">
+                  <h4><em>프리한</em> 지식인</h4>
+                </div>
+                <ul>
+                  <li>
+                    <img src="assets/images/사진작가.jpg" alt="" class="templatemo-item">
+                    <h4>코딩신</h4>
+                    <h6>풀스택 개발자</h6>
+                    <span><button id="btn3" class="toggle-btn"
+                        style="border-radius: 10px; border: #ec6090; background-color: rgb(255, 147, 201); color: white;">물어보기</button></span>
+                    <!-- <div class="download">
+                        <a href="#"><i class="fa fa-download"></i></a>
+                      </div> -->
+                  </li>
+                  <li>
+                    <img src="assets/images/영업사원1.jpg" alt="" class="templatemo-item">
+                    <h4>내일은 영업왕</h4>
+                    <h6>자동차영업사원</h6>
+                    <span><button id="btn3" class="toggle-btn"
+                        style="border-radius: 10px; border: #ec6090; background-color: rgb(255, 147, 201); color: white;">물어보기</button></span>
+                    <!-- <div class="download">
+                        <a href="#"><i class="fa fa-download"></i></a>
+                      </div> -->
+                  </li>
+                  <li>
+                    <img src="assets/images/재택근무.jpg" alt="" class="templatemo-item">
+                    <h4>재택도사</h4>
+                    <h6>속기사</h6>
+                    <span><button id="btn3" class="toggle-btn"
+                        style="border-radius: 10px; border: #ec6090; background-color: rgb(255, 147, 201); color: white;">물어보기</button></span>
+                    <!-- <div class="download">
+                        <a href="#"><i class="fa fa-download"></i></a>
+                      </div> -->
+                  </li>
+                </ul>
+                <div class="col-lg-12">
+                  <div class="main-button">
+                    <a href="streams.html">등록하기 <i class="fa-solid fa-user-pen"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- ***** Featured Games End ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>소통하기</em> <i class="fa-regular fa-envelope"></i></h4>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/person_2.jpg" alt="">
+                      <h4>Lee건축<br><span>건축디자이너</span></h4>
+                      <ul>
+                        <div class="col-lg-12">
+                          <div class="main-button" id="main-button11">
+                            <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                              나이 : 35
+                              직업 : 건축디자이너
+                              지역 : 전국 어디든
+                              경력 : 7년
+                              인사말 : 정보공유는 언제나 환영해요! 궁금한게있다면 물어보세요~!"><i class="fa-regular fa-user"
+                                style="color: white"></i></a>
+                            <div id="modal1" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p id="modalContent"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/person_6.jpg" alt="">
+                      <h4>우아하게<br><span>피아노강사</span></h4>
+                      <ul>
+                        <div class="col-lg-12">
+                          <div class="main-button" id="main-button11">
+                            <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                              나이 : 38
+                              직업 : 피아노강사
+                              지역 : 서울
+                              경력 : 10년
+                              인사말 : 소통해요^^"><i class="fa-regular fa-user" style="color: white"></i></a>
+                            <div id="modal1" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p id="modalContent"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/person_4.jpg" alt="">
+                      <h4>당신곁에 보험<br><span>보험설계사</span></h4>
+                      <ul>
+                        <div class="col-lg-12">
+                          <div class="main-button" id="main-button11">
+                            <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                              나이 : 30
+                              직업 : 보험설계사
+                              지역 : 광주
+                              경력 : 5년
+                              인사말 : 영업은 힘들지만 프리랜서 화이팅!"><i class="fa-regular fa-user" style="color: white"></i></a>
+                            <div id="modal1" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p id="modalContent"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/sq_img_13.jpg" alt="">
+                      <h4>힙하게<br><span>랩퍼</span></h4>
+                      <ul>
+                        <div class="col-lg-12">
+                          <div class="main-button" id="main-button11">
+                            <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                              나이 : 27
+                              직업 : 음악가
+                              지역 : 서울
+                              경력 : 10년
+                              인사말 : 음악적으로 소통하실분~ "><i class="fa-regular fa-user" style="color: white"></i></a>
+                            <div id="modal1" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p id="modalContent"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="most-popular">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                              <img src="assets/images/person_1.jpg" alt="">
+                              <h4>모델입니다<br><span>모델</span></h4>
+                              <ul>
+                                <div class="col-lg-12">
+                                  <div class="main-button" id="main-button11">
+                                    <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                                      나이 : 29
+                                      직업 : 모델
+                                      지역 : 서울
+                                      경력 : 10년
+                                      인사말 : 같이 소통하고 연습하실분?"><i class="fa-regular fa-user" style="color: white"></i></a>
+                                    <div id="modal1" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p id="modalContent"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                              <img src="assets/images/sq_img_7.jpg" alt="">
+                              <h4>찍기<br><span>사진작가</span></h4>
+                              <ul>
+                                <div class="col-lg-12">
+                                  <div class="main-button" id="main-button11">
+                                    <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                                      나이 : 40
+                                      직업 : 사진작가
+                                      지역 : 경기
+                                      경력 : 14년
+                                      인사말 : 정보공유하며 사진찍으러 다니실분~"><i class="fa-regular fa-user"
+                                        style="color: white"></i></a>
+                                    <div id="modal1" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p id="modalContent"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                              <img src="assets/images/sq_img_10.jpg" alt="">
+                              <h4>W_face<br><span>웹 개발</span></h4>
+                              <ul>
+                                <div class="col-lg-12">
+                                  <div class="main-button" id="main-button11">
+                                    <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                                      나이 : 35
+                                      직업 : 웹 개발자
+                                      지역 : 서울
+                                      경력 : 6개월
+                                      인사말 : 초보 웹 개발자입니다. 잘부탁드려요~"><i class="fa-regular fa-user"
+                                        style="color: white"></i></a>
+                                    <div id="modal1" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p id="modalContent"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                              <img src="assets/images/sq_img_9.jpg" alt="">
+                              <h4>수영사랑<br><span>수영강사</span></h4>
+                              <ul>
+                                <div class="col-lg-12">
+                                  <div class="main-button" id="main-button11">
+                                    <a id="main-button11" onclick="clickk()" class="modalBtn" data-content="안녕하세요 ^^
+                                      나이 : 31
+                                      직업 : 수영강사
+                                      지역 : 제주전체
+                                      경력 : 7년
+                                      인사말 : 같이 연습하고 레슨하실분?~"><i class="fa-regular fa-user"
+                                        style="color: white"></i></a>
+                                    <div id="modal1" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p id="modalContent"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- ***** Start Stream Start ***** -->
+                          <div class="start-stream">
+                            <div class="col-lg-12">
+                              <div class="row">
+
+                                <!-- <div class="col-lg-4">
+                  <div class="item">
+                    <div class="icon">
+                      <img src="assets/images/service-01.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                    </div>
+                    <h4>직업정보 공유해요</h4>
+                    <p>아직 우리가 모르는 프리랜서 직업이 많아요 정보, 노하우 공유하며 서로 발전해서 원하는 목표를 달성해 보세요!</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="item">
+                    <div class="icon">
+                      <img src="assets/images/service-02.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                    </div>
+                    <h4>정보를 얻어가요</h4>
+                    <p>프리랜서라면 꼭 알아야 할 <a href="details.html" target="_blank">세무정보, 법률정보</a>를 얻어가세요! 모두가 대우받는 프리랜서가 될수
+                      있도록 노력하겠습니다.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="item">
+                    <div class="icon">
+                      <img src="assets/images/service-03.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                    </div>
+                    <h4>같이 일해요</h4>
+                    <p>함께 하면 능률 UP! 쉽고 빠르게 협업할 수 있는 조력자를 구해보세요! 고수들에게 배우고 실력이 오르면 더 높은 페이를 받게 됩니다.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="main-button">
+                    <a href="profile.html">등록하러 가기</a>
+                  </div>
+                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                          <!-- ***** Start Stream End ***** -->
+
+                          <!-- ***** Live Stream Start ***** -->
+                          <div class="live-stream">
+                            <div class="col-lg-12">
+                              <div class="heading-section">
+                                <h4><em>프리하게</em> 꿀팁얻기</h4>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="thumb">
+                                  <img src="assets/images/숨겨진 재능찾기.png" alt="" style="border-radius: 23px;">
+                                  <a href="https://youtu.be/WmpXwVFOvIA?t=223" target="_blank"><i
+                                      class="fa fa-play">확인하기</i></a>
+                                </div>
+                                <span style="color: white;">프리랜서 종류가 궁금하셨다구요?
+                                  잘하는게 없다면 꼭 보세요 | 130가지 직업 추천✨</span>
+                                <!-- <img src="assets/images/만족도 높은직업.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                <span style="color: white;">
+                  세계적으로 가장 만족도가 높은 직업 7<br>
+                  열심히 일한 만큼 보람을 느끼고, 그에 상응하는 보상을 받는다면 일에 대한 만족도가 높아지기 마련입니다.<br><b><a
+                      href="https://v.daum.net/v/66g7vXdYLZ">자세히 보러가기</a></b></span> -->
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="thumb">
+                                  <img src="assets/images/속기사.png" alt="" style="border-radius: 23px;">
+                                  <a href="https://youtu.be/tBrLHoqT5-8?t=3" target="_blank"><i
+                                      class="fa fa-play">확인하기</i></a>
+                                </div>
+                                <span style="color: white;">프리랜서 속기사 그녀! 3년 만에 근황 인터뷰!
+                                  그런데 월급에 앞 숫자가 많이 바뀌었네?!✨</span>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="thumb">
+                                  <img src="assets/images/뉴스.png" alt="" style="border-radius: 23px;">
+                                  <a href="https://youtu.be/GNkS8C4DYJM?t=3" target="_blank"><i
+                                      class="fa fa-play">확인하기</i></a>
+                                </div>
+                                <span style="color: white;">야쿠르트 배달 · 정수기 점검 뛰어든 MZ 세대…왜?
+                                  "취업해도 월급 적잖아요"…편의점 도전하는 젊은 사장✨</span>
+                              </div>
+                            </div>
+                            <p> <a href="#" target="_blank"></a> </p>
+                            <div class="col-lg-12">
+                              <div class="main-button">
+                                <a href="details.html">더 많은 정보 보러가기</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- ***** Live Stream End ***** -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>Make © 2024 <a href="#">Free Lancer</a> Company. Free Lancer.
+
+                    <br>Design: <a href="https://templatemo.com" target="_blank"
+                      title="free CSS templates">2024/06/06</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+          <!-- Scripts -->
+          <!-- Bootstrap core JavaScript -->
+          <script src="vendor/jquery/jquery.min.js"></script>
+          <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+          <script src="assets/js/isotope.min.js"></script>
+          <script src="assets/js/owl-carousel.js"></script>
+          <script src="assets/js/tabs.js"></script>
+          <script src="assets/js/popup.js"></script>
+          <script src="assets/js/custom.js"></script>
+
+
+          <!-- <script>
+    var modalBtns = document.getElementsByClassName("modalBtn");
+    var modal = document.getElementById("modal1");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var modalContent = document.getElementById("modalContent");
+    var sendBtn = document.getElementById("sendBtn");
+    var cancelBtn = document.getElementById("cancelBtn");
+    var modalInput = document.getElementById("modalInput");
+
+    // 모든 모달 버튼에 클릭 이벤트 추가
+    for (var i = 0; i < modalBtns.length; i++) {
+      modalBtns[i].onclick = function () {
+        var content = this.getAttribute("data-content");
+        modalContent.innerHTML = content;
+        modal.style.display = "block";
+        sendBtn.disabled = true;
+        modalInput.value = "";
+      }
+    }
+
+    modalInput.oninput = function () {
+      sendBtn.disabled = !modalInput.value.trim();
+    }
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    sendBtn.onclick = function () {
+      alert("발송이 완료되었습니다.");
+      modal.style.display = "none";
+    }
+
+    cancelBtn.onclick = function () {
+      alert("취소되었습니다.");
+      modal.style.display = "none";
+    }
+  </script> -->
+          <script>
+            function setupMessageBox(buttonId, messageBoxId, messageInputId, sendButtonId, closeButtonId) {
+              var toggleBtn = document.getElementById(buttonId);
+              var messageBox = document.getElementById(messageBoxId);
+              var messageInput = document.getElementById(messageInputId);
+              var sendBtn = document.getElementById(sendButtonId);
+              var closeBtn = document.getElementById(closeButtonId);
+
+              toggleBtn.onclick = function () {
+                messageBox.style.display = messageBox.style.display === "none" || messageBox.style.display === "" ? "block" : "none";
+              };
+
+              messageInput.oninput = function () {
+                sendBtn.disabled = !messageInput.value.trim();
+              };
+
+              sendBtn.onclick = function () {
+                alert("발송이 완료되었습니다.");
+                messageBox.style.display = "none";
+                messageInput.value = "";
+                sendBtn.disabled = true;
+              };
+
+              closeBtn.onclick = function () {
+                messageBox.style.display = "none";
+                messageInput.value = "";
+                sendBtn.disabled = true;
+              };
+            }
+
+            setupMessageBox("btn1", "messageBox1", "messageInput1", "sendBtn1", "closeBtn1");
+            setupMessageBox("btn2", "messageBox2", "messageInput2", "sendBtn2", "closeBtn2");
+            setupMessageBox("btn3", "messageBox3", "messageInput3", "sendBtn3", "closeBtn3");
+            //로그인 전 버전
+
+            function clickk() {
+              document.getElementById("main-button12");
+              alert("프로필을 등록하세요");
+            };
+
+
+          </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var buttons = document.querySelectorAll('.toggle-btn');
+              buttons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                  if (button.innerHTML === '물어보기') {
+                    button.innerHTML = '프로필 등록 후 이용가능 합니다.';
+                  } else {
+                    button.innerHTML = '프로필 등록 후 이용가능 합니다';
+                  }
+                });
+              });
+            });
+            //로그인 전
+          </script>
+
+</body>
+
+</html>
